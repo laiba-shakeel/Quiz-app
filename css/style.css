@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald:wght@300;400&family=Ubuntu+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Fira Sans', sans-serif;;
+}
+.mainCont{
+    height: 100vh;
+    margin-top: 0;
+}
+.sec-01{
+    /* border: 2px solid red; */
+    /* height: 9vh; */
+    background-color: rgb(36, 32, 35);
+    /* border-radius: 2%; */
+}
+.sec-01 h2{
+    color: aliceblue;
+    
+}
+.sec-01 h3{
+    font-size: 40px;
+    
+}
+.sec-01 .question{
+font-size: 30px;
+/* color: #fff; */
+} 
+.sec-02{
+    /* border: 2px solid black; */
+    height: 70vh;
+    background-color: rgb(189, 161, 152);
+    /* border-radius: 5%; */
+}
+.sec-03{
+    /* border: 2px solid red; */
+    height: 40vh;
+    width: 50%;
+    margin-top: 5%;
+    background-color:aliceblue ;
+}
+.sec-03 ul li{
+    list-style: none;
+    /* font-size: 2rem; */
+}
+#submit , 
+.btn {
+ /* padding: 1rem 3rem; */
+ outline: none;
+ /* font-size: 2rem; */
+ /* font-size: 400; */
+ display: block;
+ margin: auto;
+ border: none;
+ text-transform: uppercase;
+ color: #fff;
+ background-color: #74b9ff;
+ /* margin-top: 4rem; */
+ cursor: pointer;
+}
+    
+#submit:hover{
+    background-color: #0984e3;
+    
+}
+#showScore{
+    background-color: #385764;
+    /* border: 2px solid red; */
+    
+}
+
+.scoreArea {
+    display: none;
+   
+   
+}
+ #showScore h3{
+ /* font-size: 3rem; */
+ text-align: center;
+}
+#showScore .btn{
+    margin-top: 2rem;
+    background-color: #55efc4;
+    color: #2d3436;
+}
+#showScore .btn:hover {
+    background-color: #00b894;
+    counter-reset: #fff;
+}
+input{
+    cursor: pointer;
+}
+
+/* RESPONSIVENESS  */
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .sec-03{
+        width: 70%;
+        height: 50%;
+    }
+    .sec-03 ul li {
+      font-size: 10px;
+    }
+    .sec-03 ul li input {
+        font-size: smaller;
+    }
+    .sec-03 h3{
+        font-size: 25px;
+    }
+    .sec-03 button #submit{
+        width: 12%;
+        height: 15%;
+        font-size: 5px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 290px) and (min-width:100px ) {
+    .sec-03{
+        width: 70%;
+        height: 50%;
+    }
+    .sec-03 ul li {
+      font-size: 10px;
+    }
+    .sec-03 ul li input {
+        font-size: smaller;
+    }
+    .sec-03 h3{
+        font-size: 25px;
+    }
+    .sec-03 button #submit{
+        width: 12%;
+        height: 15%;
+        font-size: 5px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+      .sec-03{
+        height: 70%;
+        width: 100%;
+      }
+  }

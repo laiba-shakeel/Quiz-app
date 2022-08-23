@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/authentication.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Signup Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Signup Form</span></div>
+        <div class="form">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input
+              id="register-name"
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input
+              id="register-surname"
+              type="text"
+              placeholder="Your Surname"
+              required
+            />
+          </div>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input
+              id="register-email"
+              type="email"
+              placeholder="Email or Phone"
+              required
+            />
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              id="register-password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="row button">
+            <button class="ss" onclick="register()">Sign Up</button>
+          </div>
+          <div class="signup-link">
+            Already have an account <a href="./login.html">Login now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="../js/firebase.js"></script>
+  <script>
+    let user = localStorage.getItem("user");
+    if (user) {
+      window.location.href = "/index.html";
+    }
+  </script>
+</html>
